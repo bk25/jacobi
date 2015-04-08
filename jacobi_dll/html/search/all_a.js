@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['solution',['solution',['../class_jacobi.html#ad0c9ea7dcda7471dc86ddf577ebd963a',1,'Jacobi']]],
-  ['stdafx_2ecpp',['stdafx.cpp',['../stdafx_8cpp.html',1,'']]],
-  ['stdafx_2eh',['stdafx.h',['../stdafx_8h.html',1,'']]]
+  ['_7ejacobi',['~Jacobi',['../class_jacobi.html#ae2b894537d9e4df977f918a03d1d8b68',1,'Jacobi']]]
 ];

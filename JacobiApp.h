@@ -1,7 +1,9 @@
 #include "stdafx.h"
-#include "jacobi_dll\jacobi_dll.h"
-#include "winreg_dll\winreg_dll.h"
-
+#define _DO_NOT_EXPORT
+#include "jacobi_dll/jacobi_dll.h"
+#define _DO_NOT_EXPORT
+#include "winreg_dll/winreg_dll.h"
+#pragma comment(lib, "advapi32")
 
 /**
  * definitions
@@ -9,12 +11,15 @@
 #if M_SIZE>4; 
 #undef M_SIZE; 
 #endif;
+
 #ifndef M_SIZE;
 #define M_SIZE 2; 
 #endif;
+
 #if PRECISION>1; 
 #undef PRECISION; 
 #endif;
+
 #ifndef PRECISION;
 #define PRECISION 0.01;
 #endif;
@@ -78,8 +83,9 @@ bool JacobiApp::arglist (int argc, char* argv[]){
 				//cout << argv[i] << endl;		
 				if (string(argv[i]) == "-h") {		// help
 					cout << "-h : help" << endl;
-					cout << "-r : select reigstry path" << endl;
+					cout << "-r : select reigistry path" << endl;
 					cout << "-d : use default settings (matrix size:2, precision:0.01)" << endl;
+					cout << "-c : use custom settings" << endl;
 					return false;
                 } else if (string(argv[i])  == "-r") {	// registry path change
 					cout << "Enter existing registry path (default Software\\JevgeniAnttonen\\ ) :";
@@ -88,6 +94,8 @@ bool JacobiApp::arglist (int argc, char* argv[]){
 					path = str.c_str();
                 } else if (string(argv[i])  == "-d") {	// run using default matrix size and precision (2, 0.01)
 					def = true;
+                } else if (string(argv[i])  == "-c") {	// run using custom matrix size and precision
+					def = false;
                 } else {
 					cout << "Not enough or invalid arguments, use -h for help\n";
 					return false;

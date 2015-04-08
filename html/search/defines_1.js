@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['precision',['PRECISION',['../_jacobi_app_8h.html#a9c7b069fee3c8184e14a7de8e5da2dc6',1,'JacobiApp.h']]]
+  ['m_5fsize',['M_SIZE',['../_jacobi_app_8h.html#aafa04a66b5a25c9c3c72916936a62d57',1,'JacobiApp.h']]]
 ];

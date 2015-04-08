@@ -9,10 +9,12 @@
 int main(int argc, char* argv[], char* env[])
 {
 	JacobiApp *japp = new JacobiApp();
+
+	
 	if (!japp->arglist(argc, argv)){
 		return 0;
 	}
-
+	
 
 	LPCSTR path = japp->getPath();
 

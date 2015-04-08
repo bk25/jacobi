@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>jacobi_dll: Winreg Class Reference</title>
+<title>JacobiApp: Winreg Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">jacobi_dll
+   <div id="projectname">JacobiApp
    </div>
   </td>
  </tr>
@@ -83,7 +83,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_winreg-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -99,24 +98,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa05edff94e53372f4eb82de03391a816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fbe34c40c0a11291143c79e1e3d8634"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_winreg.html#a2fbe34c40c0a11291143c79e1e3d8634">~Winreg</a> ()</td></tr>
 <tr class="separator:a2fbe34c40c0a11291143c79e1e3d8634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade75ec2a1ff9c04457301d67ed979013"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_winreg.html#ade75ec2a1ff9c04457301d67ed979013">__declspec</a> (dllexport) char readdata(LPCSTR lpSubKey)</td></tr>
-<tr class="separator:ade75ec2a1ff9c04457301d67ed979013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade96ed6d5c89cf93922bcc36af3b691b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_winreg.html#ade96ed6d5c89cf93922bcc36af3b691b">__declspec</a> (dllexport) int writedata(LPCSTR lpSubKey</td></tr>
-<tr class="separator:ade96ed6d5c89cf93922bcc36af3b691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:afed3f7cb0aa9617c1e288b33815b67d1"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_winreg.html#afed3f7cb0aa9617c1e288b33815b67d1">value</a> [1024]</td></tr>
-<tr class="separator:afed3f7cb0aa9617c1e288b33815b67d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d05925c7041c28e8c51f15def45376"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_winreg.html#ac7d05925c7041c28e8c51f15def45376">readdata</a> (LPCSTR lpSubKey)</td></tr>
+<tr class="separator:ac7d05925c7041c28e8c51f15def45376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfc83ce94283f3ca204224b4268e14a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_winreg.html#a1dfc83ce94283f3ca204224b4268e14a">writedata</a> (LPCSTR lpSubKey, char value[1024])</td></tr>
+<tr class="separator:a1dfc83ce94283f3ca204224b4268e14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae6f232badb90d7543c7170a136f055a4"><td class="memItemLeft" align="right" valign="top">HKEY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_winreg.html#ae6f232badb90d7543c7170a136f055a4">key</a></td></tr>
 <tr class="separator:ae6f232badb90d7543c7170a136f055a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>windows registry dll class </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa05edff94e53372f4eb82de03391a816"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,35 +143,47 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ade75ec2a1ff9c04457301d67ed979013"></a>
+<a class="anchor" id="ac7d05925c7041c28e8c51f15def45376"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Winreg::__declspec </td>
+          <td class="memname">char Winreg::readdata </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">LPCSTR&#160;</td>
+          <td class="paramname"><em>lpSubKey</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>reading data from registry. cout'ing values </p>
 
 </div>
 </div>
-<a class="anchor" id="ade96ed6d5c89cf93922bcc36af3b691b"></a>
+<a class="anchor" id="a1dfc83ce94283f3ca204224b4268e14a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Winreg::__declspec </td>
+          <td class="memname">int Winreg::writedata </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">LPCSTR&#160;</td>
+          <td class="paramname"><em>lpSubKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>value</em>[1024]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>writing data to registry </p>
 
 </div>
 </div>
@@ -204,25 +208,13 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afed3f7cb0aa9617c1e288b33815b67d1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char Winreg::value[1024]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>winreg_dll/<a class="el" href="winreg__dll_8h_source.html">winreg_dll.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2015 20:29:50 for jacobi_dll by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 8 2015 03:12:34 for JacobiApp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

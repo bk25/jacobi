@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['max',['max',['../class_jacobi.html#a96026843c50cb0ccc0cec511e09b9e25',1,'Jacobi']]],
-  ['maxi',['maxI',['../class_jacobi.html#af580fd11650e9b314f41b6ec2b6d1dd1',1,'Jacobi']]],
-  ['maxj',['maxJ',['../class_jacobi.html#a0c0034f40732ae4476aa791d46558d7c',1,'Jacobi']]]
+  ['result',['result',['../class_jacobi.html#ad4c034ba7882b13d38572aaab860d121',1,'Jacobi']]],
+  ['rotationmatrix',['rotationMatrix',['../class_jacobi.html#a2923e69931e7211c45671efd65ad1c7a',1,'Jacobi']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['k',['k',['../class_jacobi.html#ad89320fde78499e48535f0160ae05cd4',1,'Jacobi']]]
+  ['result',['result',['../class_jacobi.html#ad4c034ba7882b13d38572aaab860d121',1,'Jacobi']]],
+  ['rotationmatrix',['rotationMatrix',['../class_jacobi.html#a2923e69931e7211c45671efd65ad1c7a',1,'Jacobi']]]
 ];

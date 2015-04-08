@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>jacobi_dll: Jacobi Class Reference</title>
+<title>JacobiApp: Jacobi Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">jacobi_dll
+   <div id="projectname">JacobiApp
    </div>
   </td>
  </tr>
@@ -83,7 +83,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_jacobi-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -99,19 +98,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a41b30eba83497476d0eafe01c9e5dbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b894537d9e4df977f918a03d1d8b68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#ae2b894537d9e4df977f918a03d1d8b68">~Jacobi</a> (void)</td></tr>
 <tr class="separator:ae2b894537d9e4df977f918a03d1d8b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeffe3f1ee48d522895b376b442e09eaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#aeffe3f1ee48d522895b376b442e09eaf">__declspec</a> (dllexport) bool isSymmetrical(double **coefficient</td></tr>
-<tr class="separator:aeffe3f1ee48d522895b376b442e09eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d83631846c74b7c647983d5cb009fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#a95d83631846c74b7c647983d5cb009fc">__declspec</a> (dllexport) int iteration(double **coefficient</td></tr>
-<tr class="separator:a95d83631846c74b7c647983d5cb009fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a2dcc57c72daa9969fc5198913c67edfa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#a2dcc57c72daa9969fc5198913c67edfa">equation</a></td></tr>
-<tr class="separator:a2dcc57c72daa9969fc5198913c67edfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c9ea7dcda7471dc86ddf577ebd963a"><td class="memItemLeft" align="right" valign="top">int double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#ad0c9ea7dcda7471dc86ddf577ebd963a">solution</a></td></tr>
-<tr class="separator:ad0c9ea7dcda7471dc86ddf577ebd963a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb868fba3401e29a74924d324effc69"><td class="memItemLeft" align="right" valign="top">int double double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#a5fb868fba3401e29a74924d324effc69">precision</a></td></tr>
-<tr class="separator:a5fb868fba3401e29a74924d324effc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21dd89517eb2f70345872e23884a57f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#a21dd89517eb2f70345872e23884a57f8">isSymmetrical</a> (double **coefficient, int equation)</td></tr>
+<tr class="separator:a21dd89517eb2f70345872e23884a57f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1e3470eb572bf53ce30a84f55260ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_jacobi.html#aab1e3470eb572bf53ce30a84f55260ae">iteration</a> (double **coefficient, int equation, double **solution, double precision)</td></tr>
+<tr class="separator:aab1e3470eb572bf53ce30a84f55260ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -176,16 +166,26 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeffe3f1ee48d522895b376b442e09eaf"></a>
+<a class="anchor" id="a21dd89517eb2f70345872e23884a57f8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Jacobi::__declspec </td>
+          <td class="memname">bool Jacobi::isSymmetrical </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>coefficient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>equation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -193,16 +193,38 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a95d83631846c74b7c647983d5cb009fc"></a>
+<a class="anchor" id="aab1e3470eb572bf53ce30a84f55260ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Jacobi::__declspec </td>
+          <td class="memname">int Jacobi::iteration </td>
           <td>(</td>
-          <td class="paramtype">dllexport&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>coefficient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>equation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>solution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>precision</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -211,18 +233,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2dcc57c72daa9969fc5198913c67edfa"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Jacobi::equation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a03df4bf722e1b9e24da9e245ccdf06ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -383,18 +393,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5fb868fba3401e29a74924d324effc69"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int double double Jacobi::precision</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ad4c034ba7882b13d38572aaab860d121"></a>
 <div class="memitem">
 <div class="memproto">
@@ -436,18 +434,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad0c9ea7dcda7471dc86ddf577ebd963a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int double** Jacobi::solution</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a41634a8e4a7425b356b15fa633bc47a4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -474,7 +460,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 7 2015 20:27:02 for jacobi_dll by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 8 2015 03:10:17 for JacobiApp by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

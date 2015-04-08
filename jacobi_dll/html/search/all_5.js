@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['j',['j',['../class_jacobi.html#a02e746eeb54fbf286a8a933c135c9078',1,'Jacobi']]],
-  ['jacobi',['Jacobi',['../class_jacobi.html',1,'Jacobi'],['../class_jacobi.html#a41b30eba83497476d0eafe01c9e5dbff',1,'Jacobi::Jacobi()']]],
-  ['jacobi_5fdll_2ecpp',['jacobi_dll.cpp',['../jacobi__dll_8cpp.html',1,'']]],
-  ['jacobi_5fdll_2eh',['jacobi_dll.h',['../jacobi__dll_8h.html',1,'']]]
+  ['max',['max',['../class_jacobi.html#a96026843c50cb0ccc0cec511e09b9e25',1,'Jacobi']]],
+  ['maxi',['maxI',['../class_jacobi.html#af580fd11650e9b314f41b6ec2b6d1dd1',1,'Jacobi']]],
+  ['maxj',['maxJ',['../class_jacobi.html#a0c0034f40732ae4476aa791d46558d7c',1,'Jacobi']]]
 ];

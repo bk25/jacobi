@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['jacobiapp',['JacobiApp',['../class_jacobi_app.html',1,'JacobiApp'],['../class_jacobi_app.html#a356965dbb34fde6f7d245b44972e525c',1,'JacobiApp::JacobiApp()']]],
-  ['jacobiapp_2ecpp',['JacobiApp.cpp',['../_jacobi_app_8cpp.html',1,'']]],
-  ['jacobiapp_2eh',['JacobiApp.h',['../_jacobi_app_8h.html',1,'']]]
+  ['getdef',['getDef',['../class_jacobi_app.html#a52d7390ddd2c57c29f5b93d536359711',1,'JacobiApp']]],
+  ['getpath',['getPath',['../class_jacobi_app.html#aa1f2a709cea23c72a2c1157f38c7f46d',1,'JacobiApp']]]
 ];

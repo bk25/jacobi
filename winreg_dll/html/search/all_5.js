@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['value',['value',['../class_winreg.html#afed3f7cb0aa9617c1e288b33815b67d1',1,'Winreg']]]
+  ['win32_5flean_5fand_5fmean',['WIN32_LEAN_AND_MEAN',['../stdafx_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'stdafx.h']]],
+  ['winreg',['Winreg',['../class_winreg.html',1,'Winreg'],['../class_winreg.html#aa05edff94e53372f4eb82de03391a816',1,'Winreg::Winreg()']]],
+  ['winreg_5fdll_2ecpp',['winreg_dll.cpp',['../winreg__dll_8cpp.html',1,'']]],
+  ['winreg_5fdll_2eh',['winreg_dll.h',['../winreg__dll_8h.html',1,'']]],
+  ['writedata',['writedata',['../class_winreg.html#a1dfc83ce94283f3ca204224b4268e14a',1,'Winreg']]]
 ];

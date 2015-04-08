@@ -2,7 +2,14 @@
 /**
 * windows registry dll class
 */
-class Winreg {
+
+#if defined(_DO_NOT_EXPORT)
+#define DllExport  
+#else
+#define DllExport __declspec(dllexport)
+#endif
+
+class DllExport Winreg {
 private:
 
 	HKEY key;
@@ -11,8 +18,8 @@ public:
 	Winreg (LPCSTR lpSubKey);
 	~Winreg ();
 
-	__declspec(dllexport) char readdata(LPCSTR lpSubKey);
-	__declspec(dllexport) int writedata(LPCSTR lpSubKey, char value[1024]);
+	char readdata(LPCSTR lpSubKey);
+	int writedata(LPCSTR lpSubKey, char value[1024]);
 };
 
 /**
@@ -36,7 +43,7 @@ Winreg::~Winreg () {
 /**
 * reading data from registry. cout'ing values
 */
-__declspec(dllexport) char Winreg::readdata(LPCSTR lpSubKey) {
+char Winreg::readdata(LPCSTR lpSubKey) {
 	char value[1024];
 	DWORD value_length = 1024;
 	if(RegQueryValueExA(key, lpSubKey, NULL, NULL, (LPBYTE)&value, &value_length) != ERROR_SUCCESS ) {
@@ -50,7 +57,7 @@ __declspec(dllexport) char Winreg::readdata(LPCSTR lpSubKey) {
 /**
 * writing data to registry
 */
-__declspec(dllexport) int Winreg::writedata(LPCSTR lpSubKey, char value[1024]) {
+int Winreg::writedata(LPCSTR lpSubKey, char value[1024]) {
 	if (RegSetValueExA(key, lpSubKey, 0, REG_SZ, (LPBYTE)value, strlen(value)*sizeof(char)) != ERROR_SUCCESS)
 	{
 		cout <<"Unable to set key value";

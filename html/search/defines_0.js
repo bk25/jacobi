@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['m_5fsize',['M_SIZE',['../_jacobi_app_8h.html#aafa04a66b5a25c9c3c72916936a62d57',1,'JacobiApp.h']]]
+  ['_5fdo_5fnot_5fexport',['_DO_NOT_EXPORT',['../_jacobi_app_8h.html#ad68c670ec432a5b8ba2dccb5adfd6ed6',1,'_DO_NOT_EXPORT():&#160;JacobiApp.h'],['../_jacobi_app_8h.html#ad68c670ec432a5b8ba2dccb5adfd6ed6',1,'_DO_NOT_EXPORT():&#160;JacobiApp.h']]]
 ];

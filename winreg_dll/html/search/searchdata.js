@@ -1,11 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "_dkstvw~",
+  0: "dkrstw~",
   1: "w",
   2: "dstw",
-  3: "_dw~",
-  4: "kv",
-  5: "w"
+  3: "drw~",
+  4: "k",
+  5: "dw"
 };
 
 var indexSectionNames =

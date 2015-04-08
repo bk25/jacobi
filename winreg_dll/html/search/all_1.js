@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['dllmain',['DllMain',['../dllmain_8cpp.html#a26e64fb39b69bcd9d1274d279f1561b9',1,'dllmain.cpp']]],
-  ['dllmain_2ecpp',['dllmain.cpp',['../dllmain_8cpp.html',1,'']]]
+  ['key',['key',['../class_winreg.html#ae6f232badb90d7543c7170a136f055a4',1,'Winreg']]]
 ];

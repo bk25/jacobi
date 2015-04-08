@@ -1,9 +1,15 @@
 #include "stdafx.h"
 
+#if defined(_DO_NOT_EXPORT)
+#define DllExport  
+#else
+#define DllExport __declspec(dllexport)
+#endif
+
 /**
 * jacobi logic dll class
 */
-class Jacobi {
+class DllExport Jacobi {
 private:
 	/**
 	* return value of iteration
@@ -22,11 +28,11 @@ public:
 	/**
 	* checks if matrix is symmetrical
 	*/
-	__declspec(dllexport) bool isSymmetrical( double **coefficient, int equation );
+	bool isSymmetrical( double **coefficient, int equation );
 	/**
 	* Jacobi iteration for eigenvectors 
 	*/
-	__declspec(dllexport) int iteration( double **coefficient, int equation, double **solution, double precision );
+	int iteration( double **coefficient, int equation, double **solution, double precision );
 };
 /**
 * constructor
@@ -39,7 +45,7 @@ Jacobi::Jacobi (void) {
 Jacobi::~Jacobi (void) {
 }
 
-__declspec(dllexport) bool Jacobi::isSymmetrical( double **coefficient, int equation ){		
+bool Jacobi::isSymmetrical( double **coefficient, int equation ){		
 	bool result = true;
 	int i, j;
 	for ( i = 0; i < equation; i++ ) {
@@ -53,7 +59,7 @@ __declspec(dllexport) bool Jacobi::isSymmetrical( double **coefficient, int equa
 	return result;
 }
 
-__declspec(dllexport) int Jacobi::iteration ( double **coefficient, int equation, double **solution, double precision ) {		
+int Jacobi::iteration ( double **coefficient, int equation, double **solution, double precision ) {		
 
 	result = 1;
 	fault = 0.0;
